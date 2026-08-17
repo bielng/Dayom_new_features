@@ -47,6 +47,8 @@ export async function translateText(text, direction) {
     "nus-to-en": ["nus", "en"],
     "en-to-din": ["en", "din"],
     "din-to-en": ["din", "en"],
+    "nus-to-din": ["nus", "din"],
+    "din-to-nus": ["din", "nus"],
   };
   const pair = map[direction];
   if (!pair) throw new Error(`Invalid direction: ${direction}`);
