@@ -14,7 +14,7 @@ export default function App() {
         <img
           src='/banner.png'
           alt='South Sudan Translate — Bridge languages. Connect people.'
-          className='w-full h-auto max-h-44 sm:max-h-52 object-cover'
+          className='w-full h-auto object-contain max-h-48 sm:max-h-56'
         />
       </div>
 
