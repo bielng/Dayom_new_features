@@ -42,6 +42,29 @@ Dayom Lab is a web app for translating and speaking two Nilotic languages, **Nue
 └── package.json
 ```
 
+┌─────────────────────────────────────────────────────────────┐
+│                        Dayom Lab App                         │
+├─────────────────────────────────────────────────────────────┤
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐  │
+│  │  Translate  │  │    Voice    │  │        TTS          │  │
+│  │   Engine    │  │ Transcribe  │  │   Synthesis         │  │
+│  └──────┬──────┘  └──────┬──────┘  └──────────┬──────────┘  │
+│         │                │                    │             │
+│  ┌──────▼──────┐  ┌──────▼──────┐  ┌──────────▼──────────┐  │
+│  │  translate  │  │  translate  │  │  synthesizeSpeech   │  │
+│  │   .js       │  │   .js       │  │  (tts.js)           │  │
+│  │  (Google)   │  │  (Google)   │  │  (HF Space /        │  │
+│  │             │  │             │  │   Browser fallback) │  │
+│  └─────────────┘  └─────────────┘  └─────────────────────┘  │
+│         ▲                ▲                                       │
+│         │                │                                       │
+│  ┌──────┴──────┐  ┌──────┴──────┐                              │
+│  │ Web Speech  │  │  Web Speech │                              │
+│  │    API      │  │    API      │                              │
+│  │ (SpeechRec) │  │ (SpeechRec) │                              │
+│  └─────────────┘  └─────────────┘                              │
+└─────────────────────────────────────────────────────────────┘
+
 ## Getting Started
 
 ### Prerequisites
