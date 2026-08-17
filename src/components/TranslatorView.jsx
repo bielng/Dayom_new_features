@@ -160,7 +160,7 @@ export default function TranslatorView() {
         <select
           value={lang}
           onChange={handleLangChange}
-          className='appearance-none bg-[#EDE0C4] hover:bg-[#E4D2A9] text-[#4A4038] text-sm sm:text-base font-medium px-4 sm:px-5 py-2 sm:py-2.5 pr-10 rounded-full border border-[#D9C098] focus:outline-none focus:ring-2 focus:ring-[#BD5A26]/40 cursor-pointer transition-colors'
+          className='appearance-none bg-[#EDE0C4] hover:bg-[#E4D2A9] text-[#4A4038] text-base sm:text-lg font-semibold px-6 sm:px-8 py-2.5 sm:py-3 pr-12 rounded-full border border-[#D9C098] focus:outline-none focus:ring-2 focus:ring-[#BD5A26]/40 cursor-pointer transition-colors'
         >
           {LANGUAGES.map((l) => (
             <option key={l.code} value={l.code}>
