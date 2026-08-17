@@ -27,13 +27,13 @@ Thanks for your interest in contributing! Dayom Lab exists to make Nuer and Dink
 See the [README](README.md#project-structure) for a full breakdown. In short:
 
 - `src/components/` — the three main views (`TranslatorView`, `VoiceView`, `TTSView`) plus the `Dock` navigation
-- `src/services/` — API/service wrappers (`translate.js` for Google Translate, `tts.js` for the Gradio-hosted speech models)
+- `src/services/` — API/service wrappers (`translate.js` for Google Translate, `tts.js` for the Meta MMS speech models)
 - `public/` — static assets (logo, banner)
 
 ## Ways to Contribute
 
 - **Bug fixes** — check [open issues](https://github.com/bielng/Dayom_new_features/issues) or file a new one.
-- **Dinka TTS** — `services/tts.js` currently points the Dinka voice model at the Nuer Hugging Face Space as a placeholder. Hooking up a real, dedicated Dinka TTS model is one of the most impactful contributions right now.
+- **Dinka TTS** — `services/tts.js` currently points the Dinka voice model at the Nuer model as a placeholder. Hooking up a real, dedicated Dinka TTS model is one of the most impactful contributions right now.
 - **Translation quality** — the app relies on Google's unofficial translation endpoint, which can be inconsistent for Nuer/Dinka. Suggestions for better translation sources, or a way to flag/correct bad translations, are welcome.
 - **Speech recognition for Nuer/Dinka input** — Voice mode currently only recognizes spoken English. Support for recognizing spoken Nuer/Dinka would be a significant feature.
 - **UI/UX improvements** — accessibility, mobile responsiveness, loading/error states.
